@@ -7,7 +7,7 @@ const intialListItem = [
   { title: "i want to go to the market", id: 1236, checked: false },
 ];
 export default function () {
-  const [list, setList] = useState(intialListItem);
+  const [list, setList] = useState([]);
   return (
     <div className="app">
       <ListLogo>🏪 Market Carter 🛒</ListLogo>
@@ -58,11 +58,15 @@ function ListForm() {
 function ListContainer({ list }) {
   return (
     <div className="container">
-      <ul>
-        {list.map((lists) => (
-          <Lists list={lists} key={lists.id} />
-        ))}
-      </ul>
+      {list.length !== 0 ? (
+        <ul>
+          {list.map((lists) => (
+            <Lists list={lists} key={lists.id} />
+          ))}
+        </ul>
+      ) : (
+        <p className="message">List item is a kinda empty 😔</p>
+      )}
     </div>
   );
 }

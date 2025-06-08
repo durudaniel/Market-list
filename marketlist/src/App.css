@@ -112,3 +112,7 @@ input[type="checkbox"] {
   width: 2rem;
   accent-color: #8ce99a;
 }
+
+.message {
+  font-size: 2rem;
+}
