@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  /*display: grid;
+  grid-template-rows: auto auto 1fr auto;*/
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  align-content: start;
+}
+
+.logo {
+  font-family: "Monoton";
+  font-weight: 500;
+  font-size: 5rem;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  letter-spacing: 0.7rem;
+  background-color: #12b886;
+  padding: 1.2rem 1rem;
+
+  text-align: center;
+}
+
+.stats {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+
+  color: #343a40;
+  background-color: #96f2d7;
+  color: #595752;
+  padding: 2rem 0;
+}
+
+.form {
+  background-color: #38d9a9;
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+
+  padding: 1.5rem 0;
+}
+
+.container {
+  background-color: #40c057;
+
+  text-align: center;
+  padding: 6rem 4rem;
+  color: #fff;
+}
+
+.container ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-size: 2rem;
+}
+
+input,
+button {
+  cursor: pointer;
+  background-color: #c3fae8;
+  color: #343a40;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+
+  border-radius: 10rem;
+  border: none;
+}
+
+.form button {
+  background-color: #ffebb3;
+  color: #41464b;
+  transition: all 0.2s;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #ffe59c;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  padding: 1.2rem 0;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: #8ce99a;
+}
