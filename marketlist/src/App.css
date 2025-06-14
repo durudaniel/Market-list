@@ -63,8 +63,9 @@ body {
   background-color: #40c057;
 
   text-align: center;
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
   color: #fff;
+  align-items: center;
 }
 
 .container ul {
@@ -103,8 +104,12 @@ li {
   flex-direction: row;
   gap: 1rem;
 
-  padding: 1.2rem 0;
+  padding: 0.5rem 0;
   align-items: center;
+}
+
+span {
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -115,4 +120,14 @@ input[type="checkbox"] {
 
 .message {
   font-size: 2rem;
+}
+
+.btn-clear {
+  background-color: #ffebb3;
+  margin: 2.5rem 0;
+}
+
+.btn-clear:hover,
+.btn-clear:active {
+  background-color: #ffe59c;
 }
